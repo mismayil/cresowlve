@@ -1,9 +1,9 @@
 # CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge
-![framework figure](./figures/cresowlve-main-figure.png)
+![framework figure](./docs/static/images/cresowlve.svg)
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg)](#)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg)](https://arxiv.org/abs/2604.03374)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
-[![Project](https://img.shields.io/badge/Project%20Page-blue.svg)](#)
+[![Project](https://img.shields.io/badge/Project%20Page-blue.svg)](https://mete.is/cresowlve)
 
 [![Benchmark HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/dataset-on-hf-sm.svg)](https://huggingface.co/datasets)
 
