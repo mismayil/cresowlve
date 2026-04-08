@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge - Mete Ismayilzada, Renqing Cuomao, Daniil Yurshevich, Anna Sotnikova, Lonneke van der Plas, Antoine Bosselut">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="A real-world creative problem-solving benchmark that requires multiple creative thinking strategies and knowledge from diverse domains and cultures.">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="creative problem-solving, real-world knowledge, lateral thinking, benchmark, artificial intelligence, natural language processing">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="Mete Ismayilzada, Renqing Cuomao, Daniil Yurshevich, Anna Sotnikova, Lonneke van der Plas, Antoine Bosselut">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="EPFL NLP Lab">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="A real-world creative problem-solving benchmark that requires multiple creative thinking strategies and knowledge from diverse domains and cultures.">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://www.mete.is/cresowlve/">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="static/images/cresowlve.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="CresOWLve - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Mete Ismayilzada">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="creative problem-solving">
+  <meta property="article:tag" content="creativity">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@mismayilsoy">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@mismayilsoy">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="A real-world creative problem-solving benchmark that requires multiple creative thinking strategies and knowledge from diverse domains and cultures.">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="static/images/cresowlve.svg">
+  <meta name="twitter:image:alt" content="CresOWLve - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge">
+  <meta name="citation_author" content="Ismayilzada, Mete">
+  <meta name="citation_author" content="Cuomao, Renqing">
+  <meta name="citation_author" content="Yurshevich, Daniil">
+  <meta name="citation_author" content="Sotnikova, Anna">
+  <meta name="citation_author" content="van der Plas, Lonneke">
+  <meta name="citation_author" content="Bosselut, Antoine">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="Arxiv preprint">
+  <meta name="citation_pdf_url" content="">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge</title>
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/owl.png">
+  <link rel="apple-touch-icon" href="static/images/owl.png">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge",
+    "description": "A real-world creative problem-solving benchmark that requires multiple creative thinking strategies and knowledge from diverse domains and cultures.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Mete Ismayilzada",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "EPFL"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Renqing Cuomao",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "EPFL"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Daniil Yurshevich",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "EPFL"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Anna Sotnikova",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "EPFL"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Lonneke van der Plas",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Università della Svizzera Italiana"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Antoine Bosselut",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "EPFL"
+        }
+      }
+    ],
+    "datePublished": "2026-04-06",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ArXiv",
+    },
+    "url": "https://www.mete.is/cresowlve/",
+    "image": "https://www.mete.is/static/images/cresowlve.svg",
+    "keywords": ["creative problem-solving", "real-world knowledge", "lateral thinking", "benchmark", "artificial intelligence", "natural language processing"],
+    "abstract": "",
+    "citation": "",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://www.mete.is/cresowlve/"
+    },
+    "about": []
+  }
+  </script>
+  <script>
+    !function(t){t.tablesort=function(e,s){var i=this;this.$table=e,this.$thead=this.$table.find("thead"),this.settings=t.extend({},t.tablesort.defaults,s),this.$sortCells=this.$thead.length>0?this.$thead.find("th:not(.no-sort)"):this.$table.find("th:not(.no-sort)"),this.$sortCells.on("click.tablesort",(function(){i.sort(t(this))})),this.index=null,this.$th=null,this.direction=null},t.tablesort.prototype={sort:function(e,s){var i=new Date,n=this,o=this.$table,l=o.find("tbody").length>0?o.find("tbody"):o,a=l.find("tr").has("td, th"),r=a.find(":nth-child("+(e.index()+1)+")").filter("td, th"),d=e.data().sortBy,h=[],c=r.map((function(s,i){return d?"function"==typeof d?d(t(e),t(i),n):d:null!=t(this).data().sortValue?t(this).data().sortValue:t(this).text()}));0!==c.length&&(this.index!==e.index()?(this.direction="asc",this.index=e.index()):this.direction="asc"!==s&&"desc"!==s?"asc"===this.direction?"desc":"asc":s,s="asc"==this.direction?1:-1,n.$table.trigger("tablesort:start",[n]),n.log("Sorting by "+this.index+" "+this.direction),n.$table.css("display"),setTimeout((function(){n.$sortCells.removeClass(n.settings.asc+" "+n.settings.desc);for(var o=0,d=c.length;o<d;o++)h.push({index:o,cell:r[o],row:a[o],value:c[o]});h.sort((function(t,e){return n.settings.compare(t.value,e.value)*s})),t.each(h,(function(t,e){l.append(e.row)})),e.addClass(n.settings[n.direction]),n.log("Sort finished in "+((new Date).getTime()-i.getTime())+"ms"),n.$table.trigger("tablesort:complete",[n]),n.$table.css("display")}),c.length>2e3?200:10))},log:function(e){(t.tablesort.DEBUG||this.settings.debug)&&console&&console.log&&console.log("[tablesort] "+e)},destroy:function(){return this.$sortCells.off("click.tablesort"),this.$table.data("tablesort",null),null}},t.tablesort.DEBUG=!1,t.tablesort.defaults={debug:t.tablesort.DEBUG,asc:"sorted ascending",desc:"sorted descending",compare:function(t,e){return t>e?1:t<e?-1:0}},t.fn.tablesort=function(e){var s,i;return this.each((function(){s=t(this),(i=s.data("tablesort"))&&i.destroy(),s.data("tablesort",new t.tablesort(s,e))}))}}(window.Zepto||window.jQuery);
+    $(document).ready(function() {
+      $('table').tablesort();
+    });
+  </script>
+</head>
+<body>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <a href="https://mete.is" target="_blank">Mete Ismayilzada</a>,
+              </span>
+              <span class="author-block">
+                <a href="" target="_blank">Renqing Cuomao</a>,
+              </span>
+              <span class="author-block">
+                <a href="" target="_blank">Daniil Yurshevich</a>,
+              </span>
+              <span class="author-block">
+                <a href="" target="_blank">Anna Sotnikova</a>,
+              </span><br/>
+              <span class="author-block">
+                <a href="https://sites.google.com/site/lonnekenlp/" target="_blank">Lonneke van der Plas</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://atcbosselut.github.io/" target="_blank">Antoine Bosselut</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your institution and conference/journal info -->
+              <span class="author-block">EPFL, Università della Svizzera Italiana (USI)<br>Preprint 2026</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- TODO: Update with your arXiv paper ID -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2604.03374" target="_blank"
+                    class="external-link button is-normal is-rounded" style="background-color:fuchsia">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Add your supplementary material PDF or remove this section -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/mismayil/cresowlve" target="_blank"
+                    class="external-link button is-normal is-rounded" style="background-color:darkgray">
+                    <span class="icon">
+                      <img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png" alt="Hugging Face Logo">
+                    </span>
+                    <span>Benchmark</span>
+                    </a>
+                  </span>
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                <span class="link-block">
+                  <a href="https://github.com/mismayil/cresowlve" target="_blank"
+                    class="external-link button is-normal is-rounded" style="background-color: salmon">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#leaderboard"
+                    class="external-link button is-normal is-rounded" style="background-color: beige;">
+                    <span class="icon">
+                      <i class="fa-solid fa-chart-bar"></i>
+                    </span>
+                  <span>Leaderboard</span>
+                  </a>
+                </span>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <span><img src="static/images/logo-epfl.png" alt="EPFL logo" style="width: 200px;"></span>
+                <span><img src="static/images/usi-logo.png" alt="USI logo" style="width: 200px;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser" style="margin-top: -20px;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/cresowlve.svg" alt="CresOWLve logo">
+      <h2 class="subtitle has-text-centered">
+         A bilingual benchmark for creative problem-solving grounded in real-world knowledge and solvable by human experts. 
+         CresOWLve spans a diverse range of knowledge and creative domains, varies in difficulty, requires multiple creative thinking strategies and is manually validated to ensure quality.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p style="font-weight: 500;">
+            Creative problem-solving requires combining multiple cognitive abilities, including logical reasoning, lateral thinking, analogy-making, and commonsense knowledge, to discover insights that connect seemingly unrelated pieces of information. However, most existing benchmarks for large language models (LLMs) evaluate only specific components of this process. Moreover, many creativity-oriented benchmarks rely on artificially constructed brainteasers or contrived scenarios that do not reflect how creative problem-solving occurs in real-world settings. To address this gap, we introduce CresOWLve, a benchmark for evaluating creative problem-solving using puzzles grounded in real-world knowledge. Problems in CresOWLve require employing multiple creative thinking strategies, retrieving facts from diverse domains, and creatively combining them to arrive at a solution. Evaluating several frontier non-thinking and thinking LLMs, we show that CresOWLve remains highly challenging. Our analysis reveals a consistent performance gap: models perform substantially better on factual questions than on creative ones (up to -17% drop). While models can often retrieve the relevant knowledge, they struggle to form the non-obvious creative connections required to integrate the knowledge and arrive at the correct answer
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section" id="leaderboard">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Leaderboard</h2>
+        <h3 class="subtitle is-5">
+          We evaluate several frontier open-weight and proprietary LLMs varying in their size and reasoning mode, 
+          on our benchmark and demonstrate that, despite recent advances, the benchmark remains highly challenging, revealing substantial gaps in model performance on creative reasoning over real-world knowledge. 
+        </h3>
+        <p style="color: gray"><i>Note: The following are the performance results on the English version.</i></p><br>
+        <div class="leaderboard-container">
+          <div class="leaderboard-table-container">
+            <table class="ui small compact sortable striped celled unstackable table leaderboard">
+              <thead>
+                <tr>
+                  <th class="three wide"><span class="sort-header"><span>Model Family</span><i class="fas fa-sort sort-icon" aria-hidden="true"></i></span></th>
+                  <th class="three wide"><span class="sort-header"><span>Model Version</span><i class="fas fa-sort sort-icon" aria-hidden="true"></i></span></th>
+                  <th class="two wide"><span class="sort-header"><span>Thinking Model</span><i class="fas fa-sort sort-icon" aria-hidden="true"></i></span></th>
+                  <th class="two wide"><span class="sort-header"><span>Thinking Effort</span><i class="fas fa-sort sort-icon" aria-hidden="true"></i></span></th>
+                  <th class="one wide"><span class="sort-header"><span>Exact Match</span><i class="fas fa-sort sort-icon" aria-hidden="true"></i></span></th>
+                  <th class="one wide"><span class="sort-header"><span>LLM Judge Accuracy</span><i class="fas fa-sort sort-icon" aria-hidden="true"></i></span></th>
+                </tr>
+              </thead>
+              <tbody id="leaderboard-body"></tbody>
+              <tfoot></tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Knowledge Domains</h2>
+        <h3 class="subtitle is-5">CresOWLve questions require models to retrieve and creatively integrate knowledge from a wide range of domains, including science, history, culture, art, and more.
+        </h3>
+        <img src="static/images/domain_dist.png" class="desktop-resize-80" style="display: block; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Creative Language & Thinking</h2>
+        <h3 class="subtitle is-5">CresOWLve questions also require models to employ a wide range of creative thinking strategies, such as lateral thinking, analogy-making, and commonsense reasoning, to creatively combine the retrieved knowledge and arrive at the correct answer. 
+          Additionally, the questions are about several creative domains, such as poetry, metaphor and humor.
+        </h3>
+        <img src="static/images/creative_concepts_dist.png" class="desktop-resize-80" style="display: block; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Cultures & Demographics</h2>
+        <h3 class="subtitle is-5">CresOWLve questions are also grounded in knowledge about entities and people from different cultures and demographics.
+        </h3>
+        <img src="static/images/culture_langs_dist.png" class="desktop-resize-80"
+          style="display: block; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Examples</h2>
+        <h3 class="subtitle is-5">CresOWLve contains questions varying in their difficulty from Very Easy to Very Hard.
+        </h3>
+        <div class="dropdown" id="examples-dropdown">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="difficulty-button">
+              <span id="selected-difficulty">Difficulty</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item is-active" data-difficulty="Very Easy">Very Easy</a>
+              <a href="#" class="dropdown-item" data-difficulty="Easy">Easy</a>
+              <a href="#" class="dropdown-item" data-difficulty="Medium">Medium</a>
+              <a href="#" class="dropdown-item" data-difficulty="Hard">Hard</a>
+              <a href="#" class="dropdown-item" data-difficulty="Very Hard">Very Hard</a>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div>
+          <article class="message is-primary">
+            <div class="message-body">
+              <b>Question</b><br>
+              <span id="example-question"></span>
+            </div>
+          </article>
+          <details class="message is-success" id="answer-accordion">
+            <summary class="message-header" style="cursor: pointer;">See Answer</summary>
+            <div class="message-body">
+              <span id="example-answer"></span>
+            </div>
+          </details>
+          <details class="message is-info" id="explanation-accordion">
+            <summary class="message-header" style="cursor: pointer;">See Explanation</summary>
+            <div class="message-body">
+              <span id="example-explanation"></span>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">Citation</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code">
+        <code>
+@misc{ismayilzada2026cresowlve,
+      title={CresOWLve: Benchmarking Creative Problem-Solving Over Real-World Knowledge}, 
+      author={Mete Ismayilzada and Renqing Cuomao and Daniil Yurshevich and Anna Sotnikova and Lonneke van der Plas and Antoine Bosselut},
+      year={2026},
+      eprint={2604.03374},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.03374}, 
+}
+        </code>
+      </pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "null";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+  let leaderboard = [{'model_family': 'OLMo',
+  'model_name': 'OLMo-2-32B-Instruct',
+  'thinking_model': 'no',
+  'thinking_effort': null,
+  'exact_match': 0.020863658418243572,
+  'llm_judge': 0.052886948083454635},
+ {'model_family': 'C4AI',
+  'model_name': 'C4AI-command-a',
+  'thinking_model': 'no',
+  'thinking_effort': null,
+  'exact_match': 0.044638524987869965,
+  'llm_judge': 0.09073265405143134},
+ {'model_family': 'Llama',
+  'model_name': 'Llama-3.3-70B-Instruct',
+  'thinking_model': 'no',
+  'thinking_effort': null,
+  'exact_match': 0.050460941290635615,
+  'llm_judge': 0.10140708393983504},
+ {'model_family': 'Mistral',
+  'model_name': 'Mistral-Large-3-675B-Instruct',
+  'thinking_model': 'no',
+  'thinking_effort': null,
+  'exact_match': 0.11256671518680253,
+  'llm_judge': 0.17612809315866085},
+ {'model_family': 'Qwen3',
+  'model_name': 'Qwen3-235B-A22B-Instruct',
+  'thinking_model': 'no',
+  'thinking_effort': null,
+  'exact_match': 0.13051916545366327,
+  'llm_judge': 0.2081513828238719},
+ {'model_family': 'GPT',
+  'model_name': 'GPT-4.1-mini',
+  'thinking_model': 'no',
+  'thinking_effort': null,
+  'exact_match': 0.0732654051431344,
+  'llm_judge': 0.13779718583212033},
+ {'model_family': 'GPT',
+  'model_name': 'GPT-4.1',
+  'thinking_model': 'no',
+  'thinking_effort': null,
+  'exact_match': 0.1344007763221737,
+  'llm_judge': 0.24987869966035905},
+ {'model_family': 'Qwen3.5',
+  'model_name': 'Qwen3.5-397B-A17B',
+  'thinking_model': 'yes',
+  'thinking_effort': 'adaptive',
+  'exact_match': 0.19359534206695778,
+  'llm_judge': 0.31246967491508976},
+ {'model_family': 'Qwen3',
+  'model_name': 'Qwen3-235B-A22B-Thinking',
+  'thinking_model': 'yes',
+  'thinking_effort': 'adaptive',
+  'exact_match': 0.1348859776807375,
+  'llm_judge': 0.2081513828238719},
+ {'model_family': 'DeepSeek',
+  'model_name': 'DeepSeek-V3.2',
+  'thinking_model': 'yes',
+  'thinking_effort': 'adaptive',
+  'exact_match': 0.15332362930616206,
+  'llm_judge': 0.2547307132459971},
+ {'model_family': 'GLM',
+  'model_name': 'GLM-5',
+  'thinking_model': 'yes',
+  'thinking_effort': 'adaptive',
+  'exact_match': 0.18922852983988356,
+  'llm_judge': 0.37166424065987386},
+ {'model_family': 'GPT',
+  'model_name': 'GPT-5.4',
+  'thinking_model': 'yes',
+  'thinking_effort': 'none',
+  'exact_match': 0.09412906356137797,
+  'llm_judge': 0.2096069868995633},
+ {'model_family': 'GPT',
+  'model_name': 'GPT-5.4',
+  'thinking_model': 'yes',
+  'thinking_effort': 'medium',
+  'exact_match': 0.17806889859291605,
+  'llm_judge': 0.534691897137312},
+ {'model_family': 'Gemini',
+  'model_name': 'Gemini-3-Flash',
+  'thinking_model': 'yes',
+  'thinking_effort': 'minimal',
+  'exact_match': 0.24987869966035905,
+  'llm_judge': 0.41096555070354196},
+ {'model_family': 'Gemini',
+  'model_name': 'Gemini-3-Flash',
+  'thinking_model': 'yes',
+  'thinking_effort': 'medium',
+  'exact_match': 0.3508005822416303,
+  'llm_judge': 0.5215914604560893},
+ {'model_family': 'Gemini',
+  'model_name': 'Gemini-3.1-Pro',
+  'thinking_model': 'yes',
+  'thinking_effort': 'low',
+  'exact_match': 0.4643377001455604,
+  'llm_judge': 0.6754002911208151},
+ {'model_family': 'Gemini',
+  'model_name': 'Gemini-3.1-Pro',
+  'thinking_model': 'yes',
+  'thinking_effort': 'medium',
+  'exact_match': 0.4910237748665696,
+  'llm_judge': 0.7297428432799612},
+ {'model_family': 'Gemini',
+  'model_name': 'Gemini-3.1-Pro',
+  'thinking_model': 'yes',
+  'thinking_effort': 'high',
+  'exact_match': 0.5128578360019408,
+  'llm_judge': 0.7603105288694808}]
+
+  leaderboard.forEach(function(row, index) {
+    let timestamp = new Date(Date.parse(row.timestamp));
+    let model_family = $('<td>').addClass('three wide').text(row.model_family);
+    let model = $('<td>').addClass('three wide').text(row.model_name);
+    let thinking_model = $('<td>').addClass('two wide').text(row.thinking_model);
+    let thinking_effort = $('<td>').addClass('two wide').text(row.thinking_effort);
+    
+    let exact_match = $('<td>').addClass('one wide').attr('data-sort-value', row.exact_match).text((row.exact_match*100).toFixed(1));
+    let llm_judge = $('<td>').addClass('one wide').attr('data-sort-value', row.llm_judge).text((row.llm_judge*100).toFixed(1));
+    let row_element = $('<tr>').append(model_family, model, thinking_model, thinking_effort, exact_match, llm_judge);
+    $('#leaderboard-body').append(row_element.clone());
+  });
+
+  let examples = [
+    {
+      "question": "The Turkic poet Saif Sarai in the poem \"Sukhail and Guldursun\" metaphorically describes a girl circling around her illustrious beloved. Whom, according to the translator, did Sarai precede by about one and a half centuries?",
+      "answer": "[Nicolaus] Copernicus.",
+      "explanation": "Sarai (a 14th-century poet) compared the beauty Guldursun to the Earth revolving around the Sun. Copernicus is considered the discoverer of heliocentrism.",
+      "difficulty": "Very Easy"
+    },
+    {
+      "question": "In the game \"Virtua Tennis 4,\" instead of a tennis ball, a bomb is used: whoever ends up with the X on their side loses. Who created \"X\" in 1986?",
+      "answer": "The band \"Europe.\"",
+      "explanation": "Countdown. \"Final Countdown\" is a famous song and album by the band \"Europe.\"",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "In a wartime novel, the hero looks at the sky, where contrails of airplanes and bursts of anti-aircraft shells form an unpleasant, in his opinion, picture. What word did we replace with \"picture\"?",
+      "answer": "Melody.",
+      "explanation": "Contrails are the lines of a musical staff, and the bursts are the symbols of notes.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "The name of this American mountain, on the crack of which a climber is crawling, matches the title of a cult 1983 film. Write this name.",
+      "answer": "\"Scarface\"",
+      "explanation": "The rock resembles a human profile, and the crack is like a scar on this face.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Many students have made this output. Wikipedia has about fifty articles on it in different languages. The band \"Lady Antebellum\" included a song with this title only on their second album. Write this title.",
+      "answer": "Hello world.",
+      "explanation": "Many students begin learning programming languages by displaying the phrase \"Hello, world!\" using programs in the respective languages. The mentioned band greeted the world only on their second album.",
+      "difficulty": "Very Hard"
+    }
+  ];
+
+  function renderExampleByDifficulty(difficulty, selectedItem) {
+    const selectedExample = examples.find(function(example) {
+      return example.difficulty === difficulty;
+    });
+
+    if (!selectedExample) {
+      return;
+    }
+
+    $('#selected-difficulty').text(selectedExample.difficulty);
+    $('#example-question').text(selectedExample.question);
+    $('#example-answer').text(selectedExample.answer);
+    $('#example-explanation').text(selectedExample.explanation || '');
+
+    // Collapse accordions when switching examples.
+    $('#answer-accordion').prop('open', false);
+    $('#explanation-accordion').prop('open', false);
+
+    const $dropdownItems = $('#dropdown-menu .dropdown-item');
+    $dropdownItems.removeClass('is-active');
+
+    if (selectedItem && selectedItem.length) {
+      selectedItem.addClass('is-active');
+    } else {
+      $('#dropdown-menu .dropdown-item[data-difficulty="' + selectedExample.difficulty + '"]').addClass('is-active');
+    }
+  }
+
+  const $examplesDropdown = $('#examples-dropdown');
+  const $difficultyButton = $('#difficulty-button');
+
+  $difficultyButton.on('click', function(event) {
+    event.preventDefault();
+    $examplesDropdown.toggleClass('is-active');
+  });
+
+  $('#dropdown-menu .dropdown-item').on('click', function(event) {
+    event.preventDefault();
+    const $selectedItem = $(this);
+    const difficulty = $selectedItem.data('difficulty');
+    renderExampleByDifficulty(difficulty, $selectedItem);
+    $examplesDropdown.removeClass('is-active');
+  });
+
+  $(document).on('click', function(event) {
+    if (!$(event.target).closest('#examples-dropdown').length) {
+      $examplesDropdown.removeClass('is-active');
+    }
+  });
+
+  renderExampleByDifficulty('Very Easy');
+</script>
+</body>
+</html>

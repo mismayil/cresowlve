@@ -1,0 +1,41 @@
+{
+    "metadata": {},
+    "data": [
+        {
+            "id": "chgk_af09b6f423",
+            "shot_answer": [
+                "<Answer>factual</Answer>"
+            ]
+        },
+        {
+            "id": "chgk_fb9bb2ff86",
+            "shot_answer": [
+                "<Answer>creative</Answer>",
+                "<concept>proverb</concept>",
+                "<concept>simile</concept>"
+            ]
+        },
+        {
+            "id": "chgk_f12464c4c7",
+            "shot_answer": [
+                "<Answer>creative</Answer>",
+                "<concept>poem</concept>",
+                "<concept>metaphor</concept>"
+            ]
+        },
+        {
+            "id": "chgk_231d48ff18",
+            "shot_answer": [
+                "<Answer>creative</Answer>",
+                "<concept>lateral thinking</concept>"
+            ]
+        },
+        {
+            "id": "chgk_6b9a712f1c",
+            "shot_answer": [
+                "<Answer>creative</Answer>",
+                "<concept>divergent thinking</concept>"
+            ]
+        }
+    ]
+}

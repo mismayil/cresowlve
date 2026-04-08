@@ -1,0 +1,54 @@
+{
+    "metadata": {},
+    "data": [
+        {
+            "id": "chgk_b71b7da443",
+            "annotation": [
+                "<Reasoning>Model interprets the movement literally and fails to make a creative connection to fictional setting where farmers move to imaginary land to solve their problems.</Reasoning>",
+                "<Category>Missing creative connection</Category>"
+            ]
+        },
+        {
+            "id": "chgk_6cdc79725a",
+            "annotation": [
+                "<Reasoning>Model find the correct answer midway its reasoning, but continues to think more and concludes with a wrong answer.</Reasoning>",
+                "<Category>Overthinking</Category>"
+            ]
+        },
+        {
+            "id": "chgk_6668574326",
+            "annotation": [
+                "<Reasoning>Model makes up facts about referring to Al-Qaeda as Al-Kashi that sounds similar to the russian word for alcoholics.</Reasoning>",
+                "<Category>Hallucination</Category>"
+            ]
+        },
+        {
+            "id": "chgk_e5884b4863",
+            "annotation": [
+                "<Reasoning>Model locks into a certain quote from Michael Chabon and doesn't reevaluate its reasoning later.</Reasoning>",
+                "<Category>Incorrect concept anchoring</Category>"
+            ]
+        },
+        {
+            "id": "chgk_0e8a4e261a",
+            "annotation": [
+                "<Reasoning>Model connects the countries with a different link, but this link does not satisfy the other constraint that there used to be many more.</Reasoning>",
+                "<Category>Wrong hypothesis</Category>"
+            ]
+        },
+        {
+            "id": "chgk_a4b6d0fce0",
+            "annotation": [
+                "<Reasoning>Model retrieves wrong facts/references about the entities in the question.</Reasoning>",
+                "<Category>Wrong reference</Category>"
+            ]
+        },
+        {
+            "id": "chgk_110d906eea",
+            "annotation": [
+                "<Reasoning>Model misinterpreted the word DEFINITIONS that was a clue to solving the puzzle.</Reasoning>",
+                "<Category>Clue misinterpretation</Category>"
+            ]
+        }
+    ]
+}

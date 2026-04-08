@@ -1,0 +1,110 @@
+[
+    {
+        "model_name": "OLMo-2-32B-Instruct",
+        "thinking": null,
+        "en_path": "../experiments/outputs/olmo-2-0325-32b-instruct/chgk_en_benchmark_eval_cot_answer_en_s0_olmo-2-0325-32b-instruct_20260315_132042.json",
+        "ru_path": "../experiments/outputs/olmo-2-0325-32b-instruct/chgk_ru_benchmark_eval_cot_answer_ru_en_s0_olmo-2-0325-32b-instruct_20260315_160714.json"
+    },
+    {
+        "model_name": "C4AI-command-a",
+        "thinking": null,
+        "en_path": "../experiments/outputs/c4ai-command-a-03-2025/chgk_en_benchmark_eval_cot_answer_en_s0_c4ai-command-a-03-2025_20260316_152211.json",
+        "ru_path": "../experiments/outputs/c4ai-command-a-03-2025/chgk_ru_benchmark_eval_cot_answer_ru_en_s0_c4ai-command-a-03-2025_20260316_204159.json"
+    },
+    {
+        "model_name": "Llama-3.3-70B-Instruct",
+        "thinking": null,
+        "en_path": "../experiments/outputs/llama-3.3-70b-instruct/chgk_en_benchmark_eval_cot_answer_en_s0_llama-3.3-70b-instruct_20260312_200857.json",
+        "ru_path": "../experiments/outputs/llama-3.3-70b-instruct/chgk_ru_benchmark_eval_cot_answer_ru_en_s0_llama-3.3-70b-instruct_20260313_161814.json"
+    },
+    {
+        "model_name": "Mistral-Large-3-675B-Instruct",
+        "thinking": null,
+        "en_path": "../experiments/outputs/mistral-large-3-675b-instruct-2512/chgk_en_benchmark_eval_cot_answer_en_s0_mistral-large-3-675b-instruct-2512_20260316_152051.json",
+        "ru_path": "../experiments/outputs/mistral-large-3-675b-instruct-2512/chgk_ru_benchmark_eval_cot_answer_ru_en_s0_mistral-large-3-675b-instruct-2512_20260316_204039.json"
+    },
+    {
+        "model_name": "Qwen3-235B-A22B-Instruct",
+        "thinking": null,
+        "en_path": "../experiments/outputs/qwen3-235b-a22b-instruct-2507/chgk_en_benchmark_eval_cot_answer_en_s0_qwen3-235b-a22b-instruct-2507_20260316_145910.json",
+        "ru_path": "../experiments/outputs/qwen3-235b-a22b-instruct-2507/chgk_ru_benchmark_eval_cot_answer_ru_en_s0_qwen3-235b-a22b-instruct-2507_20260317_010102.json"
+    },
+    {
+        "model_name": "GPT-4.1-mini",
+        "thinking": null,
+        "en_path": "../experiments/outputs/gpt-4.1-mini/chgk_en_benchmark_eval_cot_answer_en_s0_gpt-4.1-mini_20260312_173757.json",
+        "ru_path": "../experiments/outputs/gpt-4.1-mini/chgk_ru_benchmark_eval_cot_answer_ru_en_s0_gpt-4.1-mini_20260312_202438.json"
+    },
+    {
+        "model_name": "GPT-4.1",
+        "thinking": null,
+        "en_path": "../experiments/outputs/gpt-4.1/chgk_en_benchmark_eval_cot_answer_en_s0_gpt-4.1_20260228_123352.json",
+        "ru_path": "../experiments/outputs/gpt-4.1/chgk_ru_benchmark_eval_cot_answer_ru_en_s0_gpt-4.1_20260228_160027.json"
+    },
+    {
+        "model_name": "Qwen3.5-397B-A17B",
+        "thinking": "adaptive",
+        "en_path": "../experiments/outputs/qwen3.5-397b-a17b/chgk_en_benchmark_eval_reasoning_model_en_s0_qwen3.5-397b-a17b_20260316_150440.json",
+        "ru_path": "../experiments/outputs/qwen3.5-397b-a17b/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_qwen3.5-397b-a17b_20260317_131434.json"
+    },
+    {
+        "model_name": "Qwen3-235B-A22B-Thinking",
+        "thinking": "adaptive",
+        "en_path": "../experiments/outputs/qwen3-235b-a22b-thinking-2507/chgk_en_benchmark_eval_reasoning_model_en_s0_qwen3-235b-a22b-thinking-2507_20260312_203137.json",
+        "ru_path": "../experiments/outputs/qwen3-235b-a22b-thinking-2507/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_qwen3-235b-a22b-thinking-2507_20260314_102839.json"
+    },
+    {
+        "model_name": "DeepSeek-V3.2",
+        "thinking": "adaptive",
+        "en_path": "../experiments/outputs/deepseek-v3.2/chgk_en_benchmark_eval_reasoning_model_en_s0_deepseek-v3.2_20260315_133331.json",
+        "ru_path": "../experiments/outputs/deepseek-v3.2/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_deepseek-v3.2_20260315_165350.json"
+    },
+    {
+        "model_name": "GLM-5",
+        "thinking": "adaptive",
+        "en_path": "../experiments/outputs/glm-5/chgk_en_benchmark_eval_reasoning_model_en_s0_glm-5_20260315_131728.json",
+        "ru_path": "../experiments/outputs/glm-5/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_glm-5_20260316_231532.json"
+    },
+    {
+        "model_name": "GPT-5.4",
+        "thinking": "none",
+        "en_path": "../experiments/outputs/gpt-5.4/chgk_en_benchmark_eval_reasoning_model_en_s0_gpt-5.4_20260310_110106.json",
+        "ru_path": "../experiments/outputs/gpt-5.4/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_gpt-5.4_20260310_132133.json"
+    },
+    {
+        "model_name": "GPT-5.4",
+        "thinking": "medium",
+        "en_path": "../experiments/outputs/gpt-5.4/chgk_en_benchmark_eval_reasoning_model_en_s0_gpt-5.4_20260312_101028.json",
+        "ru_path": "../experiments/outputs/gpt-5.4/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_gpt-5.4_20260313_133425.json"
+    },
+    {
+        "model_name": "Gemini-3-Flash",
+        "thinking": "minimal",
+        "en_path": "../experiments/outputs/gemini-3-flash-preview/chgk_en_benchmark_eval_reasoning_model_en_s0_gemini-3-flash-preview_20260314_131112.json",
+        "ru_path": "../experiments/outputs/gemini-3-flash-preview/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_gemini-3-flash-preview_20260314_134946.json"
+    },
+    {
+        "model_name": "Gemini-3-Flash",
+        "thinking": "medium",
+        "en_path": "../experiments/outputs/gemini-3-flash-preview/chgk_en_benchmark_eval_reasoning_model_en_s0_gemini-3-flash-preview_20260308_120523.json",
+        "ru_path": "../experiments/outputs/gemini-3-flash-preview/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_gemini-3-flash-preview_20260302_205027.json"
+    },
+    {
+        "model_name": "Gemini-3.1-Pro",
+        "thinking": "low",
+        "en_path": "../experiments/outputs/gemini-3.1-pro-preview/chgk_en_benchmark_eval_reasoning_model_en_s0_gemini-3.1-pro-preview_20260314_130907.json",
+        "ru_path": "../experiments/outputs/gemini-3.1-pro-preview/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_gemini-3.1-pro-preview_20260314_143543.json"
+    },
+    {
+        "model_name": "Gemini-3.1-Pro",
+        "thinking": "medium",
+        "en_path": "../experiments/outputs/gemini-3.1-pro-preview/chgk_en_benchmark_eval_reasoning_model_en_s0_gemini-3.1-pro-preview_20260310_105704.json",
+        "ru_path": "../experiments/outputs/gemini-3.1-pro-preview/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_gemini-3.1-pro-preview_20260310_160621.json"
+    },
+    {
+        "model_name": "Gemini-3.1-Pro",
+        "thinking": "high",
+        "en_path": "../experiments/outputs/gemini-3.1-pro-preview/chgk_en_benchmark_eval_reasoning_model_en_s0_gemini-3.1-pro-preview_20260312_204451.json",
+        "ru_path": "../experiments/outputs/gemini-3.1-pro-preview/chgk_ru_benchmark_eval_reasoning_model_ru_en_s0_gemini-3.1-pro-preview_20260313_232947.json"
+    }
+]

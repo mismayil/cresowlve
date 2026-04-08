@@ -1,0 +1,25 @@
+{
+    "metadata": {},
+    "data": [
+        {
+            "id": "chgk_d4c433d175",
+            "reasoning": "The pun relies on the Russian word 'глаз' (glaz → glazprom). Translation breaks the pun.",
+            "shot_answer": "yes"
+        },
+        {
+            "id": "chgk_be6d82a6d4",
+            "reasoning": "This is metaphor/analogy (strings vs. rails), not Russian linguistic dependence.",
+            "shot_answer": "no"
+        },
+        {
+            "id": "chgk_d0c913a4f0",
+            "reasoning": "Question refers to words that start with the same letter in Russian; this is a Russian-specific linguistic mechanism.",
+            "shot_answer": "yes"
+        },
+        {
+            "id": "chgk_e6f51ecfe9",
+            "reasoning": "Measurement analogy ('38 попугаев'); cultural reference, not Russian-language-specific.",
+            "shot_answer": "no"
+        }
+    ]
+}
