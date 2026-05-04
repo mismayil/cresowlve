@@ -1,23 +1,23 @@
 /* Modern CSS Variables for consistent theming */
 :root {
-  --primary-color: #2563eb;
-  --primary-hover: #1d4ed8;
-  --secondary-color: #64748b;
-  --accent-color: #0ea5e9;
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
-  --text-light: #94a3b8;
-  --background-primary: #ffffff;
-  --background-secondary: #f8fafc;
-  --background-accent: #f1f5f9;
-  --border-color: #e2e8f0;
+  --primary-color: #a66b4f;
+  --primary-hover: #8d5d45;
+  --secondary-color: #6b655a;
+  --accent-color: #c17d5a;
+  --text-primary: #2d2a23;
+  --text-secondary: #6b655a;
+  --text-light: #9a9590;
+  --background-primary: #faf8f3;
+  --background-secondary: #f3f0e8;
+  --background-accent: #e8e4d9;
+  --border-color: #d9d4c8;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-accent: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --gradient-subtle: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  --gradient-primary: linear-gradient(135deg, #a66b4f 0%, #8d5d45 100%);
+  --gradient-accent: linear-gradient(135deg, #c17d5a 0%, #a66b4f 100%);
+  --gradient-subtle: linear-gradient(135deg, #f3f0e8 0%, #e8e4d9 100%);
   --border-radius: 12px;
   --border-radius-lg: 16px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  font-family: 'Lora', 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Source Code Pro', monospace;
   color: var(--text-primary);
   line-height: 1.6;
   font-size: 16px;
@@ -116,13 +116,13 @@ body {
 }
 
 .teaser {
-  font-family: 'Lora', 'Inter', sans-serif;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', monospace;
 }
 
 
 /* Publication Content Styling */
 .publication-title {
-    font-family: 'Lora', 'Inter', sans-serif !important;
+    font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', monospace !important;
     font-weight: 800 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
@@ -153,7 +153,7 @@ body {
 }
 
 .publication-authors {
-    font-family: 'Lora', 'Inter', sans-serif !important;
+    font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', monospace !important;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
@@ -317,7 +317,7 @@ body {
 
 /* Section Titles */
 .title.is-3 {
-  font-family: 'Lora', 'Inter', sans-serif !important;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', monospace !important;
   font-weight: 700 !important;
   color: var(--text-primary);
   margin-bottom: 2rem !important;
@@ -352,12 +352,13 @@ body {
 .footer {
   background: var(--background-secondary);
   border-top: 1px solid var(--border-color);
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .footer .content {
   color: var(--text-secondary);
-  line-height: 1.7;
+  line-height: 1.5;
+  font-size: 0.75rem;
 }
 
 .footer a {
@@ -483,7 +484,7 @@ code {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'Lora', 'Inter', sans-serif;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', monospace;
 }
 
 .more-works-btn:hover {
@@ -779,11 +780,45 @@ a:focus {
   padding: 18px 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f5f9;
+  background-color: var(--background-accent);
+}
+
+/* Override Bulma message colors to match warm sepia palette */
+.message.is-primary .message-header {
+  background-color: #a66b4f;
+  color: #faf8f3;
+}
+
+.message.is-primary .message-body {
+  border-color: #a66b4f;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.message.is-success .message-header {
+  background-color: #6b655a;
+  color: #faf8f3;
+}
+
+.message.is-success .message-body {
+  border-color: #6b655a;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.message.is-info .message-header {
+  background-color: #c17d5a;
+  color: #faf8f3;
+}
+
+.message.is-info .message-body {
+  border-color: #c17d5a;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
 }
 
 .ui.table.leaderboard thead th {
-  background-color: #F3EFE6;
+  background-color: var(--background-accent);
 }
 
 .sort-header {
